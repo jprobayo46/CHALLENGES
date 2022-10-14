@@ -19,6 +19,7 @@ public class MessageController {
 
     @GetMapping("/all")
     public List<Message> getMessages(){
+
         return messageService.getALl();
     }
     @GetMapping("/{idMessage}")
