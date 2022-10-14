@@ -39,7 +39,7 @@ public class ReservationRepository {
     }
 
     public List<Reservation> getReservationPeriod(Date dateOne, Date dateTwo) {
-        return reservationCrudRepository.findAllByStarDateAfterAndStarDateBefore(dateOne, dateTwo);
+        return reservationCrudRepository.findAllByStartDateAfterAndStartDateBefore(dateOne, dateTwo);
     }
 
     public List<ClientReport> getTopClients() {

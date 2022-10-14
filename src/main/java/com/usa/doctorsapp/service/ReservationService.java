@@ -46,8 +46,8 @@ public class ReservationService {
         if (reservation.getIdReservation() != null) {
             Optional<Reservation> optionalReservation = reservationRepository.getById(reservation.getIdReservation());
             if (!optionalReservation.isEmpty()) {
-                if (reservation.getStarDate() != null) {
-                    optionalReservation.get().setStarDate(reservation.getStarDate());
+                if (reservation.getStartDate() != null) {
+                    optionalReservation.get().setStartDate(reservation.getStartDate());
                 }
                 if (reservation.getDevolutionDate() != null) {
                     optionalReservation.get().setDevolutionDate(reservation.getDevolutionDate());
